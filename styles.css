@@ -7,6 +7,8 @@
     --color-dark: #0B0F19;
     --color-white: #FFFFFF;
 
+    --color-gray-100: #F3F6FF;
+
     --container-padding: 1rem;
 }
 
@@ -136,6 +138,8 @@ input:checked + .slider::before {
 }
 /* END - Använde ChatGPT för att skapa en switch och anpassade sedan utseendet efter Figma-fil */
 
+
+
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -144,7 +148,6 @@ input:checked + .slider::before {
         display: block;
         margin-right: 0.5rem
     }
-
 
 }
 
@@ -174,7 +177,363 @@ input:checked + .slider::before {
         display: none;
     }
 
+    #showcase-section {
+        background-color: rgb(99,102,241);
+        background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%)
+    }
 
+    #how-does-it-work-section {
+        background-color: var(--color-gray-100);
+    }
+
+    #clients-section {
+        background-color: var(--color-gray-100);
+    }
+
+    .showcase-container {
+        width: 100%;
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        margin: auto;
+        max-width: 1320px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       /*  background-color: rgb(99,102,241);
+        background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%) */
+    }
+
+    .showcase-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .showcase-text-header {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .showcase-text-info {
+        margin-bottom: 3rem;
+    }
+
+    .showcase-app-buttons {
+        width: 100%;
+        margin-bottom: 8.5rem;
+    }
+
+    .discover-more-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .discover-more-button {
+        border-radius: 50%;
+        font-size: 1rem;
+        padding: 1rem;
+        background-color: #fff;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    .branding-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+
+    .tablet-branding {
+        margin-right: 1rem;
+    }
+
+    .desktop-branding {
+        margin-right: 1rem;
+    }
+
+    .app-features-container {
+        width: 100%;
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        margin: auto;
+        max-width: 1320px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .app-features-text-info {
+        margin-bottom: 3rem;
+    }
+
+    .app-features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .feature-card {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .card-text {
+        margin-left: 1rem;
+    }
+
+    .how-does-it-work-container {
+        width: 100%;
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        margin: auto;
+        max-width: 1320px;
+    }
+    
+    .how-does-it-work-container h1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .how-does-it-work-container p {
+        padding: 1rem;
+    }
+
+
+    .how-does-it-work-images-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product-info-container {
+        width: 100%;
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        margin: auto;
+        max-width: 1320px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-info-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product-info-text li {
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    .product-info-text i {
+        margin-right: 1rem;
+        color: blue;
+    }
+
+    .product-info-text h1 {
+        font-size: 2rem;
+    }
+
+
+    .product-info-text .btn-primary {
+        width: 12rem;
+        text-decoration: none;
+        margin-top: 4rem;
+    }
+
+    .product-details-container {
+        display: flex;
+    }
+
+    .product-info-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clients-container {
+        width: 100%;
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        margin: auto;
+        max-width: 1320px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        padding: 6rem;
+
+    }
+
+    .clients-container h1 {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .client-card {
+        gap: 5px;
+    }
+
+    .faq-container {
+        width: 100%;
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        margin: auto;
+        max-width: 1320px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 6rem;
+        margin-top: 5rem;
+    }
+
+    .faq-get-in-touch-container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .faq-contact-card {
+        width: 50%;
+        padding: 1rem;
+        border: 1px solid rgb(219, 206, 206);
+        border-radius: 15px;
+        display: grid;
+        gap: 10px;
+    }
+
+    .faq-contact-card a {
+        text-decoration: none;
+    }
+
+    #phone-contact {
+        color: var(--color-primary);
+    }
+
+    #message-contact {
+        color: rgb(6, 196, 6);
+    }
+    
+
+    .faq-common-questions-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .faq-question {
+        margin-bottom: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .faq-question h1 {
+        font-size: 1rem;
+        margin: 0;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .faq-question label {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 0.3rem
+    }
+
+    .faq-question input[type="checkbox"] {
+        display: none;
+    }
+
+    .faq-question p {
+        display: none;
+        padding: 15px;
+        background-color: #fafafa;
+       
+    }
+
+    .question-button {
+        border-radius: 50%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        background-color: var(--color-gray-100);
+        border: none;
+    }
+
+    .question-button i {
+        font-size: 1rem;
+    }
+
+    .faq-question input[type="checkbox"]:checked ~ p {
+        display: block;
+    }
+
+    .faq-question input[type="checkbox"]:checked ~ label .question-button {
+        background-color: var(--color-primary);
+    }
+
+    .faq-question input[type="checkbox"]:checked ~ label i {
+        color: #FFF
+    }
+
+
+    .footer-container {
+        width: 100%;
+        padding-left: var(--container-padding);
+        padding-right: var(--container-padding);
+        margin: auto;
+        max-width: 1320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-gray-100);
+        padding: 1rem;
+    }
+
+    .footer-input-container {
+        display: flex;
+        position: relative;
+        margin-left: 1.5rem;
+    }
+
+    #footer-icon {
+        position: absolute;
+        top: 50%;
+        left: 0.5rem;
+        transform: translateY(-50%);
+    }
+
+    .footer-input {
+        font-size: 1rem;
+        padding: 0.4rem;
+        padding-left: 2rem;
+        border-radius: .5em 0 0 .5em;
+        border: 1px solid gray;
+    }
+
+
+    .footer-input-container button {
+        background-color: #6366F1;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 0 .5em .5em 0;
+        border: none;
+        padding: 1em;
+    }
 }
 
 
